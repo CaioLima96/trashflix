@@ -19,15 +19,49 @@
 
 <body>
 
-  <header></header>
+  <header>
+
+        <nav>
+            <a href="./index.html">RESILIAFLIX</a>
+
+            <div>
+                <div id="searchBtn">
+                    <img src="./assets/img/icon/lupaIcon.png" alt="Lupa Icone .Imagem">
+                </div>
+
+                <!-- <div id="loginBtn">
+                    <a href="./assets/pages/login.html"><p>Entrar</p></a>
+                </div> -->
+
+                <a id="loginBtn" href="./assets/pages/login.html"><button>Entrar</button></a>
+            </div>
+        </nav>
+
+    </header>
 
   <div id="content">
 
-    <section id="intro" class="container"></section>
+        <section id="intro">
 
-    <section id="filmesMaisVistos"></section>
+            <h1>Filmes ruins para pessoas com gosto duvidoso!</h1>
+            <p>Assista quando quiser e cancele a qualquer hora!</p>
 
-    <section id="faq"></section>
+            <form id="formIntro">
+
+                <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
+               
+                <fieldset>
+                    <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
+                    <button><a href="./assets/pages/login.html">Cadastre-se >></a></button>
+                </fieldset>
+                
+            </form>
+            
+        </section>
+
+        <section id="filmesMaisVistos"></section>
+
+        <section id="faq"></section>
 
   </div>
 
