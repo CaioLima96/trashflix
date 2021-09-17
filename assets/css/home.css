@@ -55,7 +55,7 @@ header nav > a:active {
 
 header nav > div {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 header nav > div #searchBtn {
@@ -68,7 +68,7 @@ header nav > div #searchBtn {
     text-align: center;
 
     background-color: #41AF62;
-
+    cursor: pointer;
 }
 
 header nav > div #searchBtn img {
@@ -77,23 +77,82 @@ header nav > div #searchBtn img {
     height: 100%;
 }
 
+header nav > div button {
+    width: 117px;
+    background-color: #41AF62;
+    color: white;
+
+    border: none;
+    border-radius: 0.313rem;
+    font-size: 1.563rem;
+}
+
+header nav > div button:hover {
+    background-color: white;
+    color: #41AF62;
+}
+
+
+
 /*=== INTRO ===*/
 
 
 #content #intro {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/bg/bg-filme4.jpg);
+    background-image: url(../img/bg/bg-filme5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+#content #intro div {
+    width: 90%;
+    max-width: 704px;
+    text-align: center;
+}
 
+#content #intro div h1 {
+    font-size: 3.125rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.74);
+    margin-bottom: 1.25rem;
+}
+
+#content #intro div > p {
+    font-size: 1.625rem;
+    text-shadow: 3px 3px 4px rgb(0 0 0 / 74%);
+    margin-bottom: 3.313rem;
+}
+
+#content #intro div #formIntro p {
+    font-size: 1.125rem;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.74);
+    margin-bottom: 0.625rem;
+}
+
+#content #intro div #formIntro fieldset {
+    display: flex;
+}
+
+#content #intro div #formIntro fieldset input {
+    width: 67%;
+    border: none;
+    padding: 1.125rem;
+    border-radius: 0.313rem 0 0 0.313rem;
+}
+
+#content #intro div #formIntro fieldset button {
+    width: 33%;
+    border: none;
+    background-color: #41AF62;
+    font-size: 2rem;
+    border-radius: 0 0.313rem 0.313rem 0;
+    color: white;
+}
 
 
 

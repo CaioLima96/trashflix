@@ -19,21 +19,20 @@
 
 <body>
 
-  <header>
-
+    <header>
         <nav>
             <a href="./index.html">RESILIAFLIX</a>
 
             <div>
-                <div id="searchBtn">
-                    <img src="./assets/img/icon/lupaIcon.png" alt="Lupa Icone .Imagem">
+                <div id="searchBtn" onclick="homeSearchBtn()">
+                    <img src="./assets/img/icon/lupaIcon.png" style="pointer-events: none;" alt="Lupa Icone .Imagem">
                 </div>
 
                 <!-- <div id="loginBtn">
                     <a href="./assets/pages/login.html"><p>Entrar</p></a>
                 </div> -->
 
-                <a id="loginBtn" href="./assets/pages/login.html"><button>Entrar</button></a>
+                <button id="enterBtn" onclick="homeEnterBtn()">Entrar</button>
             </div>
         </nav>
 
@@ -43,19 +42,21 @@
 
         <section id="intro">
 
-            <h1>Filmes ruins para pessoas com gosto duvidoso!</h1>
-            <p>Assista quando quiser e cancele a qualquer hora!</p>
+            <div>
+                <h1>Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
+                <p>Assista quando quiser e cancele a qualquer hora!</p>
 
-            <form id="formIntro">
+                <form id="formIntro">
 
-                <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
-               
-                <fieldset>
-                    <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
-                    <button><a href="./assets/pages/login.html">Cadastre-se >></a></button>
-                </fieldset>
+                    <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
                 
-            </form>
+                    <fieldset>
+                        <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
+                        <button id="btnCadastrar">Cadastre-se</button>
+                    </fieldset>
+                    
+                </form>
+            </div>
             
         </section>
 
