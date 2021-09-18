@@ -1,52 +1,17 @@
-body {
-    position: relative;
-}
 
 
 /*
 ================= HEADER =================
 */
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    /* height: 83px; */
-    background-color: rgba(0, 0, 0, 0.3);
-    /* background-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 56%)); */
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 83px;
-    padding: 0 1.438rem;
-}
-
-header nav > a {
-    display: flex;
-    align-items: center;
-
-    font-size: 2.25rem;
-    color: white;
-    text-decoration: none;
-    
-    height: 100%;
-    padding: 0 0.625rem;
-}
-
 header nav > a:hover {
     color: white;
-    background-color: #41AF62;
+    background-color: var(--greenBtn);
     /* text-decoration: underline; */
 }
 
 header nav > a:active {
-    background-color: #287a41;
+    background-color: var(--greenBtn);
 }
 
 /* header nav > a:visited {
@@ -67,7 +32,7 @@ header nav > div #searchBtn {
     border-radius: 5px;
     text-align: center;
 
-    background-color: #41AF62;
+    background-color: var(--greenBtn);
     cursor: pointer;
 }
 
@@ -79,7 +44,7 @@ header nav > div #searchBtn img {
 
 header nav > div button {
     width: 117px;
-    background-color: #41AF62;
+    background-color: var(--greenBtn);
     color: white;
 
     border: none;
@@ -89,9 +54,15 @@ header nav > div button {
 
 header nav > div button:hover {
     background-color: white;
-    color: #41AF62;
+    background-color: var(--greenBtn);
 }
 
+
+
+
+/*
+================= CONTENT =================
+*/
 
 
 /*=== INTRO ===*/
@@ -148,17 +119,11 @@ header nav > div button:hover {
 #content #intro div #formIntro fieldset button {
     width: 33%;
     border: none;
-    background-color: #41AF62;
+    background-color: var(--greenBtn);
     font-size: 2rem;
     border-radius: 0 0.313rem 0.313rem 0;
     color: white;
 }
-
-
-
-/*
-================= CONTENT =================
-*/
 
 
 
