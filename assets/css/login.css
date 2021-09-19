@@ -181,7 +181,7 @@ footer ul p {
 
 
 
-@media (max-width: 500px){
+@media (max-width: 599px){
 
     header nav > a {
        font-size: 1.625rem !important;
