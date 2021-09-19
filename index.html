@@ -3,110 +3,158 @@
 <html lang="pt-br">
 
 <head>
-    <title>ResiliaFlix</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>ResiliaFlix</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="./assets/css/components.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/carousel.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="./index.html">RESILIAFLIX</a>
+  <!-- <header>
+    <nav>
+      <a href="./index.html">RESILIAFLIX</a>
 
-            <div>
-                <div id="searchBtn" onclick="homeSearchBtn()">
-                    <img src="./assets/img/icon/lupaIcon.png" style="pointer-events: none;" alt="Lupa Icone .Imagem">
-                </div>
+      <div>
+        <div id="searchBtn" onclick="homeSearchBtn()">
+          <img src="./assets/img/icon/lupaIcon.png" style="pointer-events: none;" alt="Lupa Icone .Imagem">
+        </div> -->
 
-                <!-- <div id="loginBtn">
+        <!-- <div id="loginBtn">
                     <a href="./assets/pages/login.html"><p>Entrar</p></a>
                 </div> -->
 
-                <button id="enterBtn" onclick="homeEnterBtn()">Entrar</button>
-            </div>
-        </nav>
+        <!-- <button id="enterBtn" onclick="homeEnterBtn()">Entrar</button>
+      </div>
+    </nav>
 
-    </header>
+  </header> -->
 
-    <div id="content">
-        
-        <section id="intro">
+  <!-- <div id="content"> -->
 
+    <!-- <section id="intro">
+
+      <div>
+        <h1>Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
+        <p>Assista quando quiser e cancele a qualquer hora!</p>
+
+        <form id="formIntro">
+
+          <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
+
+          <fieldset>
+            <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
+            <button id="btnCadastrar">Cadastre-se</button>
+          </fieldset>
+
+        </form>
+      </div>
+
+    </section> -->
+
+    <section id="filmesMaisVistos">
+
+      <!--Hyan-->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="border: 1px solid">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class= foto data-title="velocipastor" src="./assets/img/bg/velocipastor.jpg" class="d-block w-100" alt="...">
             <div>
-                <h1>Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
-                <p>Assista quando quiser e cancele a qualquer hora!</p>
-
-                <form id="formIntro">
-
-                    <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
-                
-                    <fieldset>
-                        <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
-                        <button id="btnCadastrar">Cadastre-se</button>
-                    </fieldset>
-                    
-                </form>
+              <h1>title</h1>
+              <h2>Sinopse</h2>
+              <button type=submit>Click-me</button>
             </div>
+          </div>
+         
 
-        </section>
+          <div class="carousel-item">
+            <img class= foto data-title="cinederela" src="./assets/img/bg/Cinderela-Baiana.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="Death_Note" src="./assets/img/bg/death-note.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="pink_flamingos" src="./assets/img/bg/pink flamingos.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="slenderMan" src="./assets/img/bg/slender-m,an.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="centopeiaHumana" src="./assets/img/bg/centoeia humana.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="rubber" src="./assets/img/bg/pneu assassino.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="malditasAranha" src="./assets/img/bg/Malditas-Aranhas.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="theEvil" src="./assets/img/bg/evil-dead.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="teeth" src="./assets/img/bg/teethh.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="rosquinha" src="./assets/img/bg/rosquina assassina.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="sharnado" src="./assets/img/bg/sharknado.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="estaNoite" src="./assets/img/bg/Esta noite encarnerei no teu cadaver.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="tremors" src="./assets/img/bg/Tremors.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class= foto data-title="tomate" src="./assets/img/bg/tomate assassino.jfif" class="d-block w-100" alt="...">
+          </div>
+        </div>
 
-        <section id="filmesMaisVistos">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-            <!--Hyan-->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="border: 1px solid">
+      <!--/Hyan-->
+    </section>
 
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img data-title="avengers" src="./assets/img/bg/bg-filme1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img data-title="psycho" src="./assets/img/bg/bg-filme3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img data-title="pikomon" src="..." class="d-block w-100" alt="...">
-                  </div>
+    <section id="faq"></section>
 
-                  
-
-                </div>
-          
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              
-              <!--/Hyan-->
-            </section>
-
-        <section id="faq"></section>
-
-    </div>
+  </div>
 
   <footer></footer>
 
   <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/teste.js"></script>
 
 
   <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
