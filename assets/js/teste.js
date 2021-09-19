@@ -66,8 +66,25 @@
 //array dos filmes que selecionanos
 const arrMovie = [
     {ptbr: 'Parque dos Dinossauros', ingles: 'Jurassic Park'},
-    {ptbr: 'Psicose', ingles: 'Psycho'}
-
+    {ptbr: 'Psicose', ingles: 'Psycho'},
+    {ptbr: 'Centopéia Humana ', ingles:'human centipede'},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
+    {ptbr: '', ingles:''},
 ]
 
 
