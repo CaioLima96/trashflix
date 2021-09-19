@@ -16,6 +16,7 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/login.css">
+
 </head>
 
 <body>
@@ -37,16 +38,16 @@
             <form action="" id="formLogin">
 
                 <div id="inputField">
-                    <label for="emailTelLogin">Email ou telefone</label>
-                    <input type="email" id="emailTelLogin" for="emailTelLogin" placeholder="Digite seu email ou telefone aqui" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email aqui"required>
                 </div>
 
                 <div id="inputField">
                     <label for="senhaLogin">Senha:</label>
-                    <input type="text" id="senhaLogin" for="senhaLogin" placeholder="Digite sua senha aqui" required>
+                    <input type="text" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha aqui" required>
                 </div>
 
-                <button>Entrar</button>
+                <button id="btnSubmit" onclick="validateEmail()">Entrar</button>
             </form>
             
             <a href="./recuperarSenha.html">Esqueci minha senha</a>
@@ -73,6 +74,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/teste.js"></script>
+    <script src="../js/testeCaio.js"></script>
 
 
     <!-- Bootstrap Bundle with Popper -->
