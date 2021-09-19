@@ -1,12 +1,29 @@
-.foto {
-    display:flex;
-    align-items:center ;
+#carouselExampleControls{
+    max-width: 1211px;
+    border: solid;
+    margin:  60px auto;
+    width:90%;
+}
+
+#carouselFilmes{
+    display: flex !important;
+    flex-wrap: wrap;
+    }
+
+#foto{
     height: 463px;
-   width: 797px;
+    width: 797px;
+}
+#foto img{
+height: 100%;
+width: 100%;
+object-fit: cover;
 }
 
-h1 h2 button{
-    border:solid;
 
-    
+
+.foto {
+    height: 463px;
+    width: 797px;
 }
+
