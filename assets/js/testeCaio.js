@@ -38,16 +38,15 @@ function validateEmail() {
   
             // alert("Endereço de email válido!");
         
-          //   return true;
+            //return true;
         
         } else {
-
 
             //alert("Invalid email address!");
 
             throw new Error("Endereço de email inválido")
           
-          //   return false;
+           //return false;
         
         }
 
