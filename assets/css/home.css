@@ -21,7 +21,7 @@ header nav > a:hover {
 }
 
 header nav > a:active {
-    background-color: var(--greenBtn);
+    background-color: var(--hoverGreen1);
 }
 
 /* header nav > a:visited {
@@ -63,8 +63,7 @@ header nav > div button {
 }
 
 header nav > div button:hover {
-    background-color: white;
-    background-color: var(--greenBtn);
+    background-color: var(--hoverGreen1);
 }
 
 
@@ -133,6 +132,10 @@ header nav > div button:hover {
     font-size: 2rem;
     border-radius: 0 0.313rem 0.313rem 0;
     color: white;
+}
+
+#content #intro div #formIntro fieldset button:hover {
+    background-color: var(--hoverGreen1);
 }
 
 

@@ -111,6 +111,10 @@ header nav > a:active {
     outline: none;
 }
 
+#loginContent main #formLogin button:hover {
+    background-color: var(--hoverGreen1);
+}
+
 #loginContent main > a {
     text-decoration: none;
     color: white;
@@ -162,6 +166,7 @@ footer ul a {
 footer ul a:hover{
     text-decoration: underline;
     color: var(--greenBtn);
+    font-style: italic;
 }
 
 footer ul li:not(li:last-child) {
@@ -172,4 +177,13 @@ footer ul p {
     font-size: 0.813rem;
     pointer-events: none;
     margin-bottom: 0;
+}
+
+
+
+@media (max-width: 500px){
+
+    header nav > a {
+       font-size: 1.625rem !important;
+    }
 }
