@@ -138,8 +138,36 @@ header nav > div button:hover {
 
 /*=== FAQ ===*/
 
+#faq {
+    background-image: url(../img/bg/bg-filme1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    width: 100%;
+    background-color: #262626;
+}
+#accordionFlushExample {
+    width: 940px !important;
+    margin: 0 auto;
+    background-color: #262626;
+}
 
+.accordion-item {
+    background-color: #262626;
+    /*margin-bottom: 10px; */
+    
+}
 
+.accordion-header {
+    text-transform: uppercase;
+}
+
+.accordion-button {
+    background-color: #262626;
+    color: white;
+    font-size: 18px;
+    
+}
 
 /*
 ================= FOOTER =================
