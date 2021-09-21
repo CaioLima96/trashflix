@@ -1,31 +1,3 @@
-const emailMask = document.querySelector('#btnSubmit').addEventListener('click', (evento) => {
-
-    evento.preventDefault()
-
-    const inputEmail = document.querySelector('#email').value
-
-    let inputEmailArr = inputEmail.split('')
-    console.log(inputEmailArr)
-
-
-    //  try {
-    //     for(let i = 0; i < inputEmailArr.lenght; i++) {
-    //         if(inputEmailArr[i] == inputEmailArr[i].indexOf("@")){
-    //             console.log('sss')
-    //         } else {
-    //             throw new Error('Email inválido')
-                
-    //         }
-    //     }
-    
-        
-    // } catch (error) {
-    //     alert(error)
-    // }
-
-}) 
-
-
 function validateEmail() {
 
     const inputEmail = document.querySelector('#email')
@@ -57,6 +29,170 @@ function validateEmail() {
 }
   
   
+//isso seria pro modal, verificar depois
+// document.addEventListener('click', (element) =>{
+//     console.log(element.target.getAttribute('data-title'))
+
+//     let omdb = $.ajax({url: 'https://www.omdbapi.com/?i=tt4154796&apikey=c377b618', async: false}).responseJSON
+//     console.log(omdb) //innerHTML += P OMDM.TITLE P
+    
+//     document.querySelector('#filmeTituloModal p:nth-child(1)').innerText = omdb.Title;
+//     document.querySelector('#filmeTituloModal p:nth-child(2)').innerText = omdb.Rated;    
+
+//     // document.querySelector('.modal-header ').innerText = omdb.Title;
+
+//     //ou fazer um for
+//     // document.querySelector('.filmeNotaModal div:nth-child(1)').innerText = omdb.Title;
+
+// })
+
+
+document.addEventListener('click', (event) =>{
+
+    let omdb2 = $.ajax({url: 'https://www.omdbapi.com/?i=tt4154796&apikey=c377b618', async: false}).responseJSON
+    console.log(omdb2)
+
+   if(event.target.id=="testeModal") {
+    $(".modal-content").html(`
+        <div class="modal-header">
+
+            <div id="filmeTituloModal">
+                <p>${omdb2.Title}</p>
+                <p>${omdb2.Rated}</p>
+            </div>
+
+            <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div id="filmePosterModal">
+                <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+            </div>
+
+            <div id="filmeInfoModal">
+
+                <div id="filmeNotaModal">
+
+                    <div>
+                        <p>IMDB</p>
+                        <p>${omdb2.imdbRating}</p>
+                    </div>
+
+                    <div>
+                        <p>${omdb2.Ratings[2].Source}</p>
+                        <p>${omdb2.Ratings[2].Value}</p>
+                    </div>
+
+                    <div>
+                        <p>${omdb2.Ratings[1].Source}</p>
+                        <p>${omdb2.Ratings[1].Value}</p>
+                    </div>
+
+                </div>
+
+                <div id="filmeSinopseModal">
+                    <p>${omdb2.Plot}</p>
+                </div>
+
+                <hr>
+
+                <div id="outrosFilmeModal">
+
+                    <p>Gênero: ${omdb2.Genre}</p>
+                    <p>Diretor: ${omdb2.Director}</p>
+                    <p>Roteirista: ${omdb2.Writer}</p>
+                    <p>Lançamento: ${omdb2.Released}</p>
+                    <p>Duração: ${omdb2.Runtime}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `);
+   }
+})
+
+
+// function testeModal() {
+//     let omdb2 = $.ajax({url: 'https://www.omdbapi.com/?i=tt4154796&apikey=c377b618', async: false}).responseJSON
+//     console.log(omdb2)
+
+//     $(".modal-content").html(`
+//         <div class="modal-header">
+
+//             <div id="filmeTituloModal">
+//                 <p>${omdb2.Title}</p>
+//                 <p>${omdb2.Rated}</p>
+//             </div>
+
+//             <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
+
+//         </div>
+
+//         <div class="modal-body">
+
+//             <div id="filmePosterModal">
+//                 <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+//             </div>
+
+//             <div id="filmeInfoModal">
+
+//                 <div id="filmeNotaModal">
+
+//                     <div>
+//                         <p>IMDB</p>
+//                         <p>${omdb2.imdbRating}</p>
+//                     </div>
+
+//                     <div>
+//                         <p>${omdb2.Ratings[2].Source}</p>
+//                         <p>${omdb2.Ratings[2].Value}</p>
+//                     </div>
+
+//                     <div>
+//                         <p>${omdb2.Ratings[1].Source}</p>
+//                         <p>${omdb2.Ratings[1].Value}</p>
+//                     </div>
+
+//                 </div>
+
+//                 <div id="filmeSinopseModal">
+//                     <p>${omdb2.Plot}</p>
+//                 </div>
+
+//                 <hr>
+
+//                 <div id="outrosFilmeModal">
+
+//                     <p>Gênero: ${omdb2.Genre}</p>
+//                     <p>Diretor: ${omdb2.Director}</p>
+//                     <p>Roteirista: ${omdb2.Writer}</p>
+//                     <p>Lançamento: ${omdb2.Released}</p>
+//                     <p>Duração: ${omdb2.Runtime}</p>
+
+//                 </div>
+
+//             </div>
+
+//         </div>
+   
+//    `);
+// }
+
+
+//primeira linha, mas não nescessariamente - não precisa de return 
+//carousel
+function caousel() {
+    let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${element.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
+    console.log(omdb)
+
+    //innerHTML += P OMDM.TITLE P <img data-poster="psycho">
+}
+
 
 
 
