@@ -14,10 +14,14 @@ function homeEnterBtn(){
 
 // const btnCadastrar = $("#btnCadastrar").addEventListener('click', btnCadastrarEntrar)
 
-const btnCad = document.querySelector('#btnCadastrar').addEventListener('click', (evento)=>{
-
-    evento.preventDefault()
-    console.log('ab')
+function cadastrar(){
     return location = ('./assets/pages/cadastrarUsuario.html')
+}
+
+// const btnCad = document.querySelector('.btnCadastrar').addEventListener('click', (evento)=>{
+
+//     evento.preventDefault()
+//     console.log('ab')
+//     return location = ('./assets/pages/cadastrarUsuario.html')
     
-})
+// })

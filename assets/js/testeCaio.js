@@ -49,7 +49,7 @@ function validateEmail() {
 
 document.addEventListener('click', (event) =>{
 
-    let omdb2 = $.ajax({url: 'https://www.omdbapi.com/?i=tt4154796&apikey=c377b618', async: false}).responseJSON
+    let omdb2 = $.ajax({url: 'https://www.omdbapi.com/?t=Psycho&apikey=c377b618', async: false}).responseJSON
     console.log(omdb2)
 
    if(event.target.id=="testeModal") {

@@ -2,7 +2,8 @@
     text-decoration: none;
     color: white;
 }
-.btnCadastrar{
+
+footer .btnCadastrar{
     border: none;
     background-color: var(--greenBtn);
     font-size: 1.5rem;
@@ -11,30 +12,30 @@
     height: 40%;
 }
 
-.formCadastrar {
+footer .formCadastrar {
     border-radius: 0.313rem 0.313rem 0 0;
     font-size: 1.5rem;
     color: var(--greenBtn) !important;
     height: 60%;
 }
 
-.formCadastrar::placeholder {
+footer .formCadastrar::placeholder {
     color: var(--greenBtn) !important;
     text-align: center;
 }
 
-.footerTitle{
+footer .footerTitle{
     text-align: center;
     margin-top: 70px;
     margin-bottom: 50px;
 }
 
-.form{
+footer .form{
     height: 90%;
     margin-left: 0.5rem;
 }
 
-.form div {
+footer .form div {
     height: 100%;
     width: 22rem;
 }

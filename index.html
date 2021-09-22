@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+
 
 </head>
 
@@ -44,264 +46,264 @@
 
   </header>
 
-  <div id="content">
+    <div id="content">
 
-    <section id="intro">
+        <section id="intro">
 
-      <div>
-        <h1>Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
-        <p>Assista quando quiser e cancele a qualquer hora!</p>
+        <div>
+            <h1 id="testeModal" data-bs-toggle="modal" data-bs-target="#filmeModalHome">Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
+            <p>Assista quando quiser e cancele a qualquer hora!</p>
 
-        <form id="formIntro">
+            <form id="formIntro">
 
-          <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
+            <p>Gostou ? Digite abaixo seu email para iniciar ou renovar sua assinatura.</p>
 
-          <fieldset>
-            <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
-            <button id="btnCadastrar">Cadastre-se</button>
-          </fieldset>
+            <fieldset>
+                <input type="text" id="emailField" name="emailField" required placeholder="Digite seu email aqui">
+                <button onclick="cadastrar()" class="btnCadastrar">Cadastre-se</button>
+            </fieldset>
 
-        </form>
-      </div>
+            </form>
+        </div>
 
-    </section>
+        </section>
 
-    <section id="filmesMaisVistos">
+        <section id="filmesMaisVistos">
 
-      <!--Hyan-->
+        <!--Hyan-->
 
-      <H1>OS MAIS VISTOS </H1>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="border: 1px solid">
+            <H1>OS MAIS VISTOS </H1>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="border: 1px solid">
 
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-        </ol>  -->
+            <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            </ol>  -->
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carouselFilmes">
+                <div class="foto"><img data-title="velocipastor" src="./assets/img/bg/velocipastor.jpg" alt="..."></div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class="foto"> <img data-title="cinederela" src="./assets/img/bg/Cinderela-Baiana.jpg" alt="...">
+                </div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class='foto'> <img data-title="Death_Note" src="./assets/img/bg/death-note.jpg" alt="..."></div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class="foto"> <img data-title="pink_flamingos" src="./assets/img/bg/pink flamingos.jfif" alt="...">
+                </div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class="foto"><img data-title="slenderMan" src="./assets/img/bg/slender-m,an.png" alt="..."></div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>       
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class="foto"><img data-title="centopeiaHumana" src="./assets/img/bg/centoeia humana.jpg" alt="...">
+                </div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carouselFilmes">
+                <div class="foto"><img data-title="rubber" src="./assets/img/bg/pneu assassino.jfif" alt="..."></div>
+                <div id="filmeInfo">
+                    <h2>title</h2>
+                    <h3>Sinopse</h3>
+                    <button type=submit>Click-me</button>
+                </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"><img data-title="velocipastor" src="./assets/img/bg/velocipastor.jpg" alt="..."></div>
-              <div id="filmeInfo">
+                <div class="foto"><img data-title="malditasAranha" src="./assets/img/bg/Malditas-Aranhas.jpg" alt="...">
+                </div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          <div class="carousel-item">
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"> <img data-title="cinederela" src="./assets/img/bg/Cinderela-Baiana.jpg" alt="...">
-              </div>
-              <div id="filmeInfo">
+                <div class="foto"><img data-title="theEvil" src="./assets/img/bg/evil-dead.jpg" alt="..."></div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
 
-          <div class="carousel-item">
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class='foto'> <img data-title="Death_Note" src="./assets/img/bg/death-note.jpg" alt="..."></div>
-              <div id="filmeInfo">
+                <div class="foto"><img data-title="teeth" src="./assets/img/bg/teethh.jpg" alt="..."></div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
-            </div>
-          </div>
 
-          <div class="carousel-item">
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"> <img data-title="pink_flamingos" src="./assets/img/bg/pink flamingos.jfif" alt="...">
-              </div>
-              <div id="filmeInfo">
+                <div class="foto"><img data-title="rosquinha" src="./assets/img/bg/rosquina assassina.jfif" alt="..."></div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          <div class="carousel-item">
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"><img data-title="slenderMan" src="./assets/img/bg/slender-m,an.png" alt="..."></div>
-              <div id="filmeInfo">
+                <div class="foto"> <img class="foto" data-title="sharnado" src="./assets/img/bg/sharknado.jpg"
+                    class="d-block w-100" alt="..."></div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
+                </div>
             </div>
-          </div>       
+            </div>
 
-          <div class="carousel-item">
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"><img data-title="centopeiaHumana" src="./assets/img/bg/centoeia humana.jpg" alt="...">
-              </div>
-              <div id="filmeInfo">
+                <div class="foto"><img class="foto" data-title="estaNoite"
+                    src="./assets/img/bg/Esta noite encarnerei no teu cadaver.jpg" alt="...">
+                </div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
-
+                </div>
             </div>
-          </div>
+            </div>
 
-          <div class="carousel-item">
+            <div class="carousel-item">
             <div class="carouselFilmes">
-              <div class="foto"><img data-title="rubber" src="./assets/img/bg/pneu assassino.jfif" alt="..."></div>
-              <div id="filmeInfo">
+                <div class="foto"><img class="foto" data-title="tremors" src="./assets/img/bg/Tremors.jpeg" alt="..."></div>
+                <div id="filmeInfo">
                 <h2>title</h2>
                 <h3>Sinopse</h3>
                 <button type=submit>Click-me</button>
-              </div>
+                </div>
             </div>
-          </div>
-          
-           <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img data-title="malditasAranha" src="./assets/img/bg/Malditas-Aranhas.jpg" alt="...">
             </div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
+
+            <div class="carousel-item">
+            <div class="carouselFilmes">
+                <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/tomate assassino.jfif"
+                    alt="..."></div>
+                <div id="filmeInfo">
+                <h2>title</h2>
+                <h3>Sinopse</h3>
+                <button type=submit>Click-me</button>
+                </div>
             </div>
-          </div>
+            </div>
+
+            <div class="carousel-item">
+            <div class="carouselFilmes">
+                <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/A-Camisinha-Assassina-1996-5.jpg"
+                    alt="..."></div>
+                <div id="filmeInfo">
+                <h2>title</h2>
+                <h3>Sinopse</h3>
+                <button type=submit>Click-me</button>
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <div class="carouselFilmes">
+                <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/Dragon-Ball-Evolution-Piccolo-Goku.jpg"
+                    alt="..."></div>
+                <div id="filmeInfo">
+                <h2>title</h2>
+                <h3>Sinopse</h3>
+                <button type=submit>Click-me</button>
+                </div>
+            </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img data-title="theEvil" src="./assets/img/bg/evil-dead.jpg" alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img data-title="teeth" src="./assets/img/bg/teethh.jpg" alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img data-title="rosquinha" src="./assets/img/bg/rosquina assassina.jfif" alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"> <img class="foto" data-title="sharnado" src="./assets/img/bg/sharknado.jpg"
-                class="d-block w-100" alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img class="foto" data-title="estaNoite"
-                src="./assets/img/bg/Esta noite encarnerei no teu cadaver.jpg" alt="...">
-            </div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img class="foto" data-title="tremors" src="./assets/img/bg/Tremors.jpeg" alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/tomate assassino.jfif"
-                alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-          <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/A-Camisinha-Assassina-1996-5.jpg"
-                alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="carouselFilmes">
-            <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/Dragon-Ball-Evolution-Piccolo-Goku.jpg"
-                alt="..."></div>
-            <div id="filmeInfo">
-              <h2>title</h2>
-              <h3>Sinopse</h3>
-              <button type=submit>Click-me</button>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-        
+        </section>
 
         <!-- FAQ -->
 
@@ -312,7 +314,7 @@
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                           O que é o Trashflix? 
+                            O que é o Trashflix? 
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -339,7 +341,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                             Onde posso assitir?
+                                Onde posso assitir?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -350,7 +352,7 @@
                             telas, é compatível com todas.</div>
                     </div>
                 </div>
-               <!--<div class="accordion accordion-flush" id="accordionFlushExample">
+                <!--<div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -395,7 +397,7 @@
                 </div>
             </div>
         </section>
-      </div>
+    </div>
 
    <footer class="py-4 footer">
         <div class="container">
@@ -409,7 +411,7 @@
                     <form class="form">
                         <div class="d-flex flex-column">
                             <input id="newsletter1" type="text" class="form-control formCadastrar" placeholder="Digite aqui seu email">
-                            <button class="btn btn-primary btnCadastrar" type="button">Cadastre-se > </button>
+                            <button onclick="cadastrar()" class="btn btn-primary btnCadastrar" type="button">Cadastre-se > </button>
                         </div>
                     </form>
                 </div>
