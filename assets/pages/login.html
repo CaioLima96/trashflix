@@ -16,21 +16,65 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/login.css">
+
 </head>
 
 <body>
     
     <header>
+
         <nav>
             <a href="../../index.html">RESILIAFLIX</a>
         </nav>
 
     </header>
 
+    <div id="loginContent">
+
+        <main>
+
+            <h1>ENTRAR</h1>
+
+            <form action="" id="formLogin">
+
+                <div id="inputField">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email aqui"required>
+                </div>
+
+                <div id="inputField">
+                    <label for="senhaLogin">Senha:</label>
+                    <input type="text" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha aqui" required>
+                </div>
+
+                <button id="btnSubmit" onclick="validateEmail()">Entrar</button>
+            </form>
+            
+            <a href="./recuperarSenha.html">Esqueci minha senha</a>
+
+            <p>Não tem cadastro? Então clique <a href="./cadastrarUsuario.html">aqui</a>.</p>
+
+        </main>
+
+    </div>
+
+    <footer>
+
+        <p>Duvidas? Ligue: 4002-8922</p>
+
+        <ul>
+            <li><a href="./equipe.html"><p>Equipe</p></a></li>
+            <li><p>Fale conosco</p></li>
+            <li><p>Termos de uso</p></li>
+        </ul>
+
+    </footer>
+
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/teste.js"></script>
+    <script src="../js/testeCaio.js"></script>
 
 
     <!-- Bootstrap Bundle with Popper -->
