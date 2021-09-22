@@ -15,6 +15,11 @@ body {
 
 :root {
     --greenBtn: #41AF62;
+    --bgDark1: rgba(0, 0, 0, 0.3);
+    --bgDark2: rgba(0, 0, 0, 0.74);
+    --bgDark3: rgba(0, 0, 0, 0.28);
+    --hoverGreen1: #229043;
+
 }
 
 /*
@@ -28,12 +33,6 @@ body {
 */
 
 header {
-    /*position: absolute
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    /* height: 83px; */
     background-color: rgba(0, 0, 0, 0.3);
     /* background-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 56%)); */
 }

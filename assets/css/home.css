@@ -4,6 +4,16 @@
 ================= HEADER =================
 */
 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    /* height: 83px; */
+    /* background-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 56%)); */
+}
+
 header nav > a:hover {
     color: white;
     background-color: var(--greenBtn);
@@ -11,7 +21,7 @@ header nav > a:hover {
 }
 
 header nav > a:active {
-    background-color: var(--greenBtn);
+    background-color: var(--hoverGreen1);
 }
 
 /* header nav > a:visited {
@@ -53,8 +63,7 @@ header nav > div button {
 }
 
 header nav > div button:hover {
-    background-color: white;
-    background-color: var(--greenBtn);
+    background-color: var(--hoverGreen1);
 }
 
 
@@ -80,7 +89,7 @@ header nav > div button:hover {
     flex-direction: column;
 }
 
-#content #intro div {
+#content #intro > div {
     width: 90%;
     max-width: 704px;
     text-align: center;
@@ -89,19 +98,19 @@ header nav > div button:hover {
 #content #intro div h1 {
     font-size: 3.125rem;
     font-weight: bold;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.74);
+    text-shadow: 3px 3px 4px var(--bgDark2);
     margin-bottom: 1.25rem;
 }
 
 #content #intro div > p {
     font-size: 1.625rem;
-    text-shadow: 3px 3px 4px rgb(0 0 0 / 74%);
+    text-shadow: 3px 3px 4px var(--bgDark2);
     margin-bottom: 3.313rem;
 }
 
 #content #intro div #formIntro p {
     font-size: 1.125rem;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.74);
+    text-shadow: 3px 3px 4px var(--bgDark2);
     margin-bottom: 0.625rem;
 }
 
@@ -125,6 +134,87 @@ header nav > div button:hover {
     color: white;
 }
 
+#content #intro div #formIntro fieldset button:hover {
+    background-color: var(--hoverGreen1);
+}
+
+@media (max-width: 360px) {
+
+    #content #intro div h1 {
+        font-size: 2.25rem !important;
+    }
+
+    header nav > a {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media (max-width: 414px) {
+
+    #content #intro div h1{
+        margin-bottom: 0.875rem;
+    }
+
+    #content #intro div > p{
+        font-size: 1.125rem !important;
+    }
+
+    #content #intro div #formIntro p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #content #intro div h1{
+        font-size: 2.5rem !important;
+    }
+
+    header nav > div #searchBtn {
+        height: 35px !important;
+        width: 40px !important;
+    }
+
+    header nav > div #searchBtn img {
+        width: 55% !important;
+    }
+
+    header nav > div button {
+        width: 68px !important;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 599px) {
+
+    header nav {
+        padding: 0 1.438rem 0 0.875rem !important;
+    }
+
+    header nav > a {
+        font-size: 1.625rem;
+        padding: 0 !important;
+    }
+
+    #content #intro div #formIntro fieldset {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    #content #intro div #formIntro fieldset input {
+        border-radius: 0.313rem 0.313rem 0 0 !important;
+    }
+
+    #content #intro div #formIntro fieldset button {
+        border-radius: 0 0 0.313rem 0.313rem !important;
+        font-size: 1.375rem !important;
+        padding: 0.125rem;
+    }
+
+    #content #intro div #formIntro fieldset input, #content #intro div #formIntro fieldset button {
+        width: 76% !important;
+    }
+}
 
 
 
