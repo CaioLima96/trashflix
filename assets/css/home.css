@@ -158,16 +158,25 @@ header nav > div button:hover {
     
 }
 
-.accordion-header {
+/*.accordion-header {
     text-transform: uppercase;
-}
+}*/
 
 .accordion-button {
     background-color: #262626;
     color: white;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
+
+/*@media (max-width: 900px){
+    #accordionFlushExample {
+        max-width: 300px;
+    }
+} */
+
+/*.accordion-body {
+    font-size: 14px;
+}*/
 
 /*
 ================= FOOTER =================
