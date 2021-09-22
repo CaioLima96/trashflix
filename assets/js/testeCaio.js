@@ -1,52 +1,3 @@
-function validateEmail() {
-
-    const inputEmail = document.querySelector('#email')
-
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    try {
-
-        if (inputEmail.value.match(validRegex)) {
-  
-            // alert("Endereço de email válido!");
-        
-            //return true;
-        
-        } else {
-
-            //alert("Invalid email address!");
-
-            throw new Error("Endereço de email inválido")
-          
-           //return false;
-        
-        }
-
-    } catch (error) {
-        alert(error)
-    }
-  
-}
-  
-  
-//isso seria pro modal, verificar depois
-// document.addEventListener('click', (element) =>{
-//     console.log(element.target.getAttribute('data-title'))
-
-//     let omdb = $.ajax({url: 'https://www.omdbapi.com/?i=tt4154796&apikey=c377b618', async: false}).responseJSON
-//     console.log(omdb) //innerHTML += P OMDM.TITLE P
-    
-//     document.querySelector('#filmeTituloModal p:nth-child(1)').innerText = omdb.Title;
-//     document.querySelector('#filmeTituloModal p:nth-child(2)').innerText = omdb.Rated;    
-
-//     // document.querySelector('.modal-header ').innerText = omdb.Title;
-
-//     //ou fazer um for
-//     // document.querySelector('.filmeNotaModal div:nth-child(1)').innerText = omdb.Title;
-
-// })
-
-
 //verificar se é EVENT ou ELEMENT
 document.addEventListener('click', (event) =>{
 
@@ -57,25 +8,34 @@ document.addEventListener('click', (event) =>{
 
     if(event.target.id=="testeModal") {
         $(".modal-header").html(`
-    
+
             <div id="filmeTituloModal">
                 <p>${omdb2.Title}</p>
                 <p>${omdb2.Rated}</p>
             </div>
 
             <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
-            
         `);
         $("#filmePosterModal").html(`
         
             <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
         
         `);
+        $("#filmeSinopseModal").html(`
+            <p>${omdb2.Plot}</p>
+        `);
+        $("#outrosFilmeModal").html(`
+            <p>Gênero: ${omdb2.Genre}</p>
+            <p>Diretor: ${omdb2.Director}</p>
+            <p>Roteirista: ${omdb2.Writer}</p>
+            <p>Lançamento: ${omdb2.Released}</p>
+            <p>Duração: ${omdb2.Runtime}</p>
+        `);
         $("#filmeNotaModal").html(`
         
             <div>
                 <p>IMDB</p>
-                <p>${omdb2.imdbRating ? omdb2.imdbRating : 'NULL'}</p>
+                <p>${omdb2.imdbRating}</p>
             </div>
 
             <div>
@@ -89,23 +49,184 @@ document.addEventListener('click', (event) =>{
             </div>
 
         `);
-        $("#filmeSinopseModal").html(`
-            <p>${omdb2.Plot}</p>
-        `);
-        $("#outrosFilmeModal").html(`
-            <p>Gênero: ${omdb2.Genre}</p>
-            <p>Diretor: ${omdb2.Director}</p>
-            <p>Roteirista: ${omdb2.Writer}</p>
-            <p>Lançamento: ${omdb2.Released}</p>
-            <p>Duração: ${omdb2.Runtime}</p>
-        `);
-        //$("#").html(``);
-    
     } 
 
     // try {
-    //    else {
-    //         throw new Error("ERRO: retorno da API inválido.")
+    //     let omdb2 = $.ajax({url: `https://www.omdbapi.com/?t=${event.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
+    //     console.log(omdb2)
+        
+        
+    
+    //     if(omdb2 == undefined) {
+            
+    //         throw new Error('Requisição com erro')
+
+    //     } else if(event.target.id=="testeModal") {
+    //         $(".modal-header").html(`
+
+    //             <div id="filmeTituloModal">
+    //                 <p>${omdb2.Title}</p>
+    //                 <p>${omdb2.Rated}</p>
+    //             </div>
+
+    //             <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
+    //         `);
+    //         $("#filmePosterModal").html(`
+            
+    //             <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+            
+    //         `);
+    //         $("#filmeSinopseModal").html(`
+    //             <p>${omdb2.Plot}</p>
+    //         `);
+    //         $("#outrosFilmeModal").html(`
+    //             <p>Gênero: ${omdb2.Genre}</p>
+    //             <p>Diretor: ${omdb2.Director}</p>
+    //             <p>Roteirista: ${omdb2.Writer}</p>
+    //             <p>Lançamento: ${omdb2.Released}</p>
+    //             <p>Duração: ${omdb2.Runtime}</p>
+    //         `);
+    //         $("#filmeNotaModal").html(`
+            
+    //             <div>
+    //                 <p>IMDB</p>
+    //                 <p>${omdb2.imdbRating ? omdb2.imdbRating : 'NULL'}</p>
+    //             </div>
+
+    //         `);
+    //     }
+    
+    // } catch (error) {
+    //     $(".modal-header").html(`
+    //         <div id="filmeTituloModal">
+    //             <p>${error}</p>
+    //             <p></p>
+    //         </div>
+    //     `)
+    //     console.log(error)
+    // }
+
+
+    // if(event.target.id=="testeModal") {
+        
+    //     $(".modal-header").html(`
+
+    //         <div id="filmeTituloModal">
+    //             <p>${omdb2.Title}</p>
+    //             <p>${omdb2.Rated}</p>
+    //         </div>
+
+    //         <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
+    //     `);
+    //     $("#filmePosterModal").html(`
+        
+    //         <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+        
+    //     `);
+    //     $("#filmeSinopseModal").html(`
+    //         <p>${omdb2.Plot}</p>
+    //     `);
+    //     $("#outrosFilmeModal").html(`
+    //         <p>Gênero: ${omdb2.Genre}</p>
+    //         <p>Diretor: ${omdb2.Director}</p>
+    //         <p>Roteirista: ${omdb2.Writer}</p>
+    //         <p>Lançamento: ${omdb2.Released}</p>
+    //         <p>Duração: ${omdb2.Runtime}</p>
+    //     `);
+    //     $("#filmeNotaModal").html(`
+        
+    //         <div>
+    //             <p>IMDB</p>
+    //             <p>${omdb2.imdbRating ? omdb2.imdbRating : 'NULL'}</p>
+    //         </div>
+
+    //         <div>
+    //             <p>${omdb2.Ratings[2].Source ? omdb2.Ratings[2].Source : 'NULL'}</p>
+    //             <p>${omdb2.Ratings[2].Value ? omdb2.Ratings[2].Value : 'NULL'}</p>
+    //         </div>
+
+    //         <div>
+    //             <p>${omdb2.Ratings[1].Source ? omdb2.Ratings[1].Source : 'NULL'}</p>
+    //             <p>${omdb2.Ratings[1].Value ? omdb2.Ratings[1].Value : 'NULL'}</p>
+    //         </div>
+
+    //     `);
+    
+    //     // <!--<div>
+    //     //         <p>${omdb2.Ratings[2].Source ? omdb2.Ratings[2].Source : 'NULL'}</p>
+    //     //         <p>${omdb2.Ratings[2].Value ? omdb2.Ratings[2].Value : 'NULL'}</p>
+    //     //     </div>
+
+    //     //     <div>
+    //     //         <p>${omdb2.Ratings[1].Source ? omdb2.Ratings[1].Source : 'NULL'}</p>
+    //     //         <p>${omdb2.Ratings[1].Value ? omdb2.Ratings[1].Value : 'NULL'}</p>
+    //     //     </div>-->
+
+
+    //     // for(i = 0; i < omdb2.lenght; i++) {
+    //     //     $("#filmeNotaModal").html(`
+        
+    //     //     <div>
+    //     //         <p>IMDB</p>
+    //     //         <p>${omdb2.imdbRating}</p>
+    //     //     </div>
+
+    //     //     <div>
+    //     //         <p>${omdb2.Ratings[i].Source}</p>
+    //     //         <p>${omdb2.Ratings[i].Value}</p>
+    //     //     </div>
+
+    //     //     <div>
+    //     //         <p>${omdb2.Ratings[i].Source}</p>
+    //     //         <p>${omdb2.Ratings[i].Value}</p>
+    //     //     </div>
+
+    //     // `);
+    //     // }
+
+        
+    //     //$("#").html(``);
+    
+   // } 
+
+    // try {
+    //     if(event.target.id=="testeModal"){
+            
+    //         $(".modal-header").html(`
+    
+    //             <div id="filmeTituloModal">
+    //                 <p>${omdb2.Title}</p>
+    //                 <p>${omdb2.Rated}</p>
+    //             </div>
+
+    //             <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
+    //         `);
+    //         $("#filmePosterModal").html(`
+            
+    //             <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+            
+    //         `);
+    //         $("#filmeSinopseModal").html(`
+    //             <p>${omdb2.Plot}</p>
+    //         `);
+    //         $("#outrosFilmeModal").html(`
+    //             <p>Gênero: ${omdb2.Genre}</p>
+    //             <p>Diretor: ${omdb2.Director}</p>
+    //             <p>Roteirista: ${omdb2.Writer}</p>
+    //             <p>Lançamento: ${omdb2.Released}</p>
+    //             <p>Duração: ${omdb2.Runtime}</p>
+    //         `);
+    //         $("#filmeNotaModal").html(`
+            
+    //             <div>
+    //                 <p>IMDB</p>
+    //                 <p>${omdb2.imdbRating ? omdb2.imdbRating : 'NULL'}</p>
+    //             </div>
+
+    //         `);
+    //     }else if(omdb2 != 200){
+    //         $(".modal-header").html("<p>ERRO: retorno da API inválido.</p>");
+    //         throw new Error("ERRO: retorno da API inválido.") 
     //     }
 
         
@@ -116,6 +237,28 @@ document.addEventListener('click', (event) =>{
 
    
 })
+
+
+//primeira linha, mas não nescessariamente - não precisa de return 
+//carousel
+
+
+function caousel() {
+    let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${element.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
+    console.log(omdb)
+
+    //innerHTML += P OMDM.TITLE P <img data-poster="psycho">
+}
+
+
+
+
+
+
+/*
+=====================
+*/
+
 
 
 // function testeModal() {
@@ -183,17 +326,6 @@ document.addEventListener('click', (event) =>{
    
 //    `);
 // }
-
-
-//primeira linha, mas não nescessariamente - não precisa de return 
-//carousel
-function caousel() {
-    let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${element.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
-    console.log(omdb)
-
-    //innerHTML += P OMDM.TITLE P <img data-poster="psycho">
-}
-
 
 
 
