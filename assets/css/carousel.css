@@ -1,0 +1,34 @@
+H1{
+    text-align: center;
+    margin:50px;
+}
+
+#carouselExampleControls{
+    max-width: 1211px;
+    border: solid;
+    margin:  60px auto;
+    width:90%;
+}
+
+.carouselFilmes{
+    display: flex !important;
+    flex-wrap: wrap;
+    }
+
+.foto{
+    height: 463px;
+    width: 70%;
+}
+.foto img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+#filmeInfo{
+    border: solid;
+    border-color: #41AF62;
+    width:30%;
+    background-color: #41AF62;
+}
+
