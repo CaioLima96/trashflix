@@ -1,0 +1,59 @@
+body{
+    background-image: url(../img/bg/clipartBg.png);
+    
+}
+
+
+
+header nav > a:hover {
+    color: white;
+    background-color: #41AF62;
+}
+
+
+
+#content{
+    padding: 9%;
+}
+h1{
+    text-align: center;
+    margin:25px auto;
+    color:white;
+}
+
+#barra{
+    display: flex;
+    justify-content: center;
+    height: 38px;
+}
+
+#pesqFilmes{
+    
+    width: 327px;
+    border: none;
+    padding: 1.125rem;
+    border-radius: 0.313rem 0 0 0.313rem;
+}
+
+button{
+    
+    border:none;
+    width:79px;
+    background-color: #41AF62;
+}
+
+
+#listaDeFilmes{
+    
+    padding: 75px;
+}
+
+#lista{
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+}
+
+li {
+    margin: 15px;
+}

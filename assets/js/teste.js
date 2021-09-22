@@ -65,8 +65,6 @@
 
 //array dos filmes que selecionanos
 const arrMovie = [
-    {ptbr: 'Parque dos Dinossauros', ingles: 'Jurassic Park'},
-    {ptbr: 'Psicose', ingles: 'Psycho'},
     {ptbr: 'Centopéia Humana ', ingles:'human centipede'},
     {ptbr: 'Camisinha Assassinas', ingles:'Kondom des Grauens'},
     {ptbr: 'Rubber, Pneu Assassino', ingles:'Rubber'},
@@ -80,7 +78,7 @@ const arrMovie = [
     {ptbr: 'Dragon Ball evolution', ingles:'DragonBall evolution'},
     {ptbr: 'Pink Flamingos', ingles:'Pink Flamingos'},
     {ptbr: 'À Meia-Noite Levarei Sua Alma', ingles:'At midnight I will take your soul '},
-    {ptbr: 'Death Note ', ingles:'death Note'},
+    {ptbr: 'Caderno da Morte', ingles:'death Note'},
     {ptbr: "Velocipastor", ingles: "Velocipastor"},
     {ptbr: "Os maus mortos ", ingles : "the evil dead"}
 ]
@@ -98,8 +96,9 @@ const arrMovie = [
 
 
 //pega o valor do que a pessoa digitou em tempo real
-document.getElementById('textoInicial').addEventListener('keyup', (element) =>{
+document.getElementById('pesqFilmes').addEventListener('keyup', (element) =>{
     filmes(element.target.value)
+    
 })
 
 
@@ -112,7 +111,7 @@ function filmes(inputText) {
         if(arrMovie[i].ptbr.toLowerCase().includes(inputText.toLowerCase()) || arrMovie[i].ingles.toLowerCase().includes(inputText.toLowerCase())) {
 
             let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${arrMovie[i].ingles}&apikey=c377b618`, async: false}).responseJSON
-            // document.querySelector('body').innerHTML += `<p>${omdb.Director}</p>`
+            // document.querySelector('body').innerHTML += `<li>${omdb.poster}</li>`
             console.log(omdb)
         } 
     }    
