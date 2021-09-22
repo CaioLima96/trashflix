@@ -81,6 +81,8 @@ const arrMovie = [
     {ptbr: 'Caderno da Morte', ingles:'death Note'},
     {ptbr: "Velocipastor", ingles: "Velocipastor"},
     {ptbr: "Os maus mortos ", ingles : "the evil dead"}
+    {ptbr: " ", ingles : ""}
+    {ptbr: " ", ingles : ""}
 ]
 
 
