@@ -1,0 +1,159 @@
+.modal-dialog {
+    color: white;
+    max-width: 960px;
+    padding: .5rem;
+}
+
+.modal-dialog .modal-content {
+    background-color: #262626 !important;
+    padding: 1.25rem;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.modal-header, .modal-body {
+    padding: 0;
+}
+
+.modal-header {
+    margin-bottom: 1.25rem;
+}
+
+
+
+/*
+================= HEADER =================
+*/
+
+.modal-header #filmeTituloModal p:first-child {
+    font-size: 2.188rem;
+    margin-bottom: 0.063rem;
+}
+
+.modal-header #filmeTituloModal p:last-child {
+    display: inline-block;
+    font-size: 0.875rem;
+    margin-bottom: 1.813rem;
+    border: 1px solid var(--greenBtn);
+    background-color: var(--bgDark1);
+    border-radius: 1.5rem;
+    padding: 0 0.938rem;
+}
+
+.modal-header button {
+    align-self: flex-start;
+    padding: 5px;
+    border: 0;
+    color: white;
+    background-color: transparent;
+}
+
+
+
+/*
+================= BODY =================
+*/
+
+.modal-body #filmeInfoModal {
+    margin-left: 1.25rem;
+}
+
+.modal-body #filmeInfoModal #filmeNotaModal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body #filmeInfoModal #filmeNotaModal div {
+    background-color: var(--bgDark1);
+    border: 1px solid var(--greenBtn);
+    border-radius: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    text-align: center;
+}
+
+.modal-body #filmeInfoModal #filmeNotaModal div:not(div:last-child) {
+    margin-right: 1.063rem;
+}
+
+.modal-body #filmeInfoModal #filmeNotaModal p {
+    margin-bottom: 0;
+}
+
+.modal-body #filmeInfoModal #filmeSinopseModal {
+    margin: 1.313rem 0 1rem 0;
+}
+
+.modal-body #filmeInfoModal #filmeSinopseModal p {
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+.modal-body #filmeInfoModal hr {
+    height: 1px;
+    border-color: white;
+    background-color: white;
+    opacity: 1;
+    border-radius: 1.625rem;
+    margin: 0 0 2.063rem 0;
+}
+
+.modal-body #filmeInfoModal #outrosFilmeModal p {
+    margin-bottom: 0.875rem !important;
+}
+
+.modal-body #filmeInfoModal #outrosFilmeModal p:last-child { 
+    /*Nao adianta fazer com :not na linha de cima, o <p> ainda sim pega a margin do bootstrap*/
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 411px) {
+
+    .modal-body #filmeInfoModal #filmeNotaModal {
+        justify-content: center;
+    }
+
+    .modal-body #filmeInfoModal #filmeNotaModal div{
+        margin-bottom: 1.063rem;
+    }
+
+    .modal-body #filmeInfoModal #filmeNotaModal div:not(div:first-child) {
+        margin-right: 0;
+    }
+
+    .modal-body #filmeInfoModal #filmeSinopseModal {
+        margin-top: 0.188rem;
+    }
+
+    
+}
+
+@media (max-width: 414px) {
+
+    .modal-header #filmeTituloModal p:first-child {
+        font-size: 1.75rem;
+    }
+}
+
+
+@media (max-width: 699px) {
+
+    .modal-body {
+        flex-wrap: wrap;
+    }
+
+    .modal-body #filmePosterModal {
+        order: 1;
+        margin: 2.688rem auto 0;
+    }
+
+    .modal-body #filmePosterModal img {
+        width: 100%;
+    }
+
+    .modal-body #filmeInfoModal {
+        margin-left: 0 !important;
+    }
+}
