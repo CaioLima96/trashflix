@@ -21,16 +21,11 @@ body{
 header nav > a:hover {
     color: white;
     background-color: #41AF62;
-    /* text-decoration: underline; */
 }
 
 header nav > a:active {
     background-color: #287a41;
 }
-
-/* header nav > a:visited {
-    color: rgb(223, 223, 223);
-} */
 
 
 /*
