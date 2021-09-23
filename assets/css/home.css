@@ -249,27 +249,16 @@ header nav > div button:hover {
 
 .accordion-item {
     background-color: #262626;
-<<<<<<< HEAD
-=======
-  
->>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
     
 }
- /*
-.accordion-button:focus {
-   background-color: #000000; 
-   color: --hoverGreen1 #229043;
-}*/
 
-<<<<<<< HEAD
-.accordion-button {
-=======
-/*.accordion-header {
-    text-transform: uppercase;
-}*/
+.accordion-button:focus{
+    border: solid;
+    box-shadow: var(--hoverGreen1);
+
+}
 
 .accordion-button{
->>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
     background-color: #262626;
     color: white; 
     font-size: 18px; 
@@ -299,15 +288,11 @@ h2 {
 .accordion-button:focus{
     border: solid;
     box-shadow: var(--hoverGreen1);
-
-<<<<<<< HEAD
-=======
 }
 
 .accordion-body {
     background-color: black;
     color:  var(--greenBtn);
->>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
 
 }
 
