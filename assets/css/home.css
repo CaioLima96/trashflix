@@ -249,17 +249,34 @@ header nav > div button:hover {
 
 .accordion-item {
     background-color: #262626;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
     
 }
+ /*
+.accordion-button:focus {
+   background-color: #000000; 
+   color: --hoverGreen1 #229043;
+}*/
 
+<<<<<<< HEAD
 .accordion-button {
+=======
+/*.accordion-header {
+    text-transform: uppercase;
+}*/
+
+.accordion-button{
+>>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
     background-color: #262626;
-    color: white;
-    font-size: 18px;
+    color: white; 
+    font-size: 18px; 
 }
 
 .accordion-button:hover{
-    color: var(--greenBtn);
+    color: var(--hoverGreen1);
     background-color: black;
 }
 
@@ -267,19 +284,38 @@ header nav > div button:hover {
     color: var(--hoverGreen1);
     background-color: black;
 }
+
+h2 {
+    padding: 0 !important;
+}
+
 .accordion-button:not(.collapsed){
-    background-color: var(--greenBtn);
-    color: black;
+    background-color: black;
+    color: var(--greenBtn);
     border:none !important;
+    font-weight: bold;
 }
 
 .accordion-button:focus{
     border: solid;
     box-shadow: var(--hoverGreen1);
+
+<<<<<<< HEAD
+=======
 }
 
+.accordion-body {
+    background-color: black;
+    color:  var(--greenBtn);
+>>>>>>> f1d03ad162c7eb25e6a441956b77c41eaf5788ad
 
+}
 
+@media (max-width: 900px){
+    #accordionFlushExample {
+        max-width: 100%;
+    }
+}
 
 /*
 ================= FOOTER =================
