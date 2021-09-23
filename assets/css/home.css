@@ -245,22 +245,27 @@ header nav > div button:hover {
 
 .accordion-item {
     background-color: #262626;
-    /*margin-bottom: 10px; */
+  
     
 }
+ /*
+.accordion-button:focus {
+   background-color: #000000; 
+   color: --hoverGreen1 #229043;
+}*/
 
 /*.accordion-header {
     text-transform: uppercase;
 }*/
 
-.accordion-button {
+.accordion-button{
     background-color: #262626;
-    color: white;
-    font-size: 18px;
+    color: white; 
+    font-size: 18px; 
 }
 
 .accordion-button:hover{
-    color: var(--greenBtn);
+    color: var(--hoverGreen1);
     background-color: black;
 }
 
@@ -269,28 +274,29 @@ header nav > div button:hover {
     background-color: black;
 }
 .accordion-button:not(.collapsed){
-    background-color: var(--greenBtn);
-    color: black;
+    background-color: black;
+    color: var(--greenBtn);
     border:none !important;
+    font-weight: bold;
 }
 
 .accordion-button:focus{
     border: solid;
     box-shadow: var(--hoverGreen1);
+
 }
 
-/*@media (max-width: 900px){
+.accordion-body {
+    background-color: black;
+    color:  var(--greenBtn);
+
+}
+
+@media (max-width: 900px){
     #accordionFlushExample {
-        max-width: 300px;
+        max-width: 100%;
     }
-} */
-
-/*.accordion-body {
-    font-size: 14px;
-}*/
-
-
-
+}
 
 /*
 ================= FOOTER =================

@@ -55,16 +55,26 @@ header nav > a:active {
     text-align: center;
     background-color: var(--bgDark3);
     border-radius: 0.375rem;
-    border: solid 1px transparent;     /* acrescentei */
+   /* border: solid 1px transparent;     /* acrescentei */
     /*background-color: rgba(0, 0, 0, 0.3); */
 }
 
-main .bg {
+/*main .bg {
     background-image: url(../img/bg/bg-pinkflamingos.jpg);
-    opacity: 0.7;
-    
+    opacity: 0.7; */
 
-    
+.bg-pic-form {
+    width: 95%;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.text-pic-form {
+    font-style: italic;
+    color: white;
+    font-size: 13px;
+    margin: 10px;
 }
 
 #recuperacaoContent main h1 {
@@ -81,7 +91,7 @@ main .bg {
 #recuperacaoContent main #formRecuperacao {
     width: 85%;
     max-width: 302px;
-    margin: 200px auto auto;                   /* 50px auto*/
+    margin: 50px auto 10px;   /* 50px auto 0  */    /*200px auto auto; */     /* do caio ta diferente aqui           /* 50px auto*/
 }
 
 #recuperacaoContent main #formRecuperacao #inputField {
@@ -140,7 +150,7 @@ main .bg {
 }
 
 /*#recuperacaoContent main p {
-    margin: 1.438rem 0 0 0;         /*  comentar aqui pra não deixar erro no final do box com um pedaço da foto sendo repetida  
+    margin: 1.438rem 0 0 0;         /*  do caio está com essa parte - comentar aqui pra não deixar erro no final do box com um pedaço da foto sendo repetida  
 } */
 
 #recuperacaoContent main p a {
