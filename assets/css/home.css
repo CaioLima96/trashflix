@@ -14,6 +14,11 @@ header {
     /* background-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 56%)); */
 }
 
+header nav > a {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
 header nav > a:hover {
     color: white;
     background-color: var(--greenBtn);
