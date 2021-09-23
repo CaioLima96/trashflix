@@ -20,6 +20,6 @@ const arrMovie = [
 
 
 function moldeCard(objeto) {
-    return `<li data-title="${objeto.Title}"><img src="${objeto.Poster}"></li>`
+    return `<li data-title="${objeto.Title}" data-bs-toggle="modal" data-bs-target="#filmeModalHome"><img src="${objeto.Poster}"></li>`
 }
 
