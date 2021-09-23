@@ -273,6 +273,11 @@ header nav > div button:hover {
     color: var(--hoverGreen1);
     background-color: black;
 }
+
+h2 {
+    padding: 0 !important;
+}
+
 .accordion-button:not(.collapsed){
     background-color: black;
     color: var(--greenBtn);

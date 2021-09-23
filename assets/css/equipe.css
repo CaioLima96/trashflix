@@ -126,6 +126,45 @@ header nav > div {
     border-radius: 50%;
 }
 
+footer {
+    background-color: var(--bgDark1);
+    text-align: center;
+}
+
+footer > p {
+    margin-top: 2.188rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.313rem;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul a:hover{
+    text-decoration: underline;
+    color: var(--greenBtn);
+    font-style: italic;
+}
+
+footer ul li:not(li:last-child) {
+    margin-right: 0.313rem;
+}
+
+footer ul p {
+    font-size: 0.813rem;
+    pointer-events: none;
+    margin-bottom: 0;
+}
+
 
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
