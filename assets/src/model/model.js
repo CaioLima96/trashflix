@@ -19,7 +19,7 @@ const arrMovie = [
 ]
 
 
-function moldeCard(url) {
-    return `<li><img src="${url}"></li>`
+function moldeCard(objeto) {
+    return `<li data-title="${objeto.Title}"><img src="${objeto.Poster}"></li>`
 }
 

@@ -13,7 +13,7 @@ function filmes(inputText) {
             let filmes = nossosFilmes(arrMovie[i].ingles)
 
             
-            document.getElementById('lista').innerHTML += moldeCard(filmes.Poster)
+            document.getElementById('lista').innerHTML += moldeCard(filmes)
             // $("#lista").html(moldeCard(filmes.Poster))
             console.log(filmes)
         } 
