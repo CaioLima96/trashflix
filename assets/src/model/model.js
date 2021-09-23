@@ -15,7 +15,7 @@ const arrMovie = [
     {ptbr: 'À Meia-Noite Levarei Sua Alma', ingles:'At midnight I will take your soul'},
     {ptbr: 'Caderno da Morte', ingles:'death Note'},
     {ptbr: "Velocipastor", ingles: "Velocipastor"},
-    {ptbr: "Os maus mortos ", ingles : "the evil dead"},
+    {ptbr: "Os maus mortos ", ingles : "The Evil Dead"},
     {ptbr: "Rosquinha Assassina", ingles : "Attack of the Killer Donuts"},
     {ptbr: "Re-Animator: A Hora dos Mortos-Vivos", ingles: "Re-Animator"}
 ]

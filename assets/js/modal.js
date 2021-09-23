@@ -1,7 +1,9 @@
 document.addEventListener('click', (event) =>{
     //
         event.target.getAttribute('data-title')
-    
+
+        console.log(event.target.getAttribute('data-title'))
+
         try {
             let omdb2 = $.ajax({url: `https://www.omdbapi.com/?t=${event.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
             console.log(omdb2)
