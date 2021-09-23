@@ -8,18 +8,11 @@ function validateEmail() {
 
         if (inputEmail.value.match(validRegex)) {
   
-            // alert("Endereço de email válido!");
-        
-            //return true;
+            //console.log('Olá Mundo')
         
         } else {
 
-            //alert("Invalid email address!");
-
             throw new Error("Endereço de email inválido")
-          
-           //return false;
-        
         }
 
     } catch (error) {

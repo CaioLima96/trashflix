@@ -216,6 +216,12 @@ header nav > div button:hover {
     }
 }
 
+@media (max-width: 1023px) {
+    #content #intro {
+        padding: 60px 0;
+    }
+}
+
 @media (min-width: 1024px) {
     #content #intro {
         width: 100%;

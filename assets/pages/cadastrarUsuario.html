@@ -44,7 +44,7 @@
       </div>
       <div class="form-group col-md-3">
         <label for="inputPassword4">Confirme sua senha</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="*********" required>
+        <input type="password" class="form-control" id="inputPassword5" placeholder="*********" required>
       </div>
 
       <div class="form-group col-md-3">
@@ -101,7 +101,7 @@
           <option value="TO">Tocantins</option>
         </select>
         <div class="d-grip">
-          <button type="submit" class="btn btn-primary btn-block btnCadastrar" type="button"> Cadastrar</button>
+          <button  id="email" class="btn btn-primary btn-block btnCadastrar"onclick="validateEmail()"> Cadastrar</button>
         </div>
       </div>
     </div>
@@ -128,6 +128,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../js/cadastroCep.js"></script>
+  <script src="../src/controller/validateEmail.js"></script>
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"

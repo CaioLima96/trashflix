@@ -12,11 +12,6 @@ function filmes(inputText) {
 
             let filmes = nossosFilmes(arrMovie[i].ingles)
 
-            // for(i =0; i < filmes.length; i++) {
-
-
-            // }
-
             let filmeCard = moldeCard(filmes)
             
             $("#lista").html(filmeCard)
