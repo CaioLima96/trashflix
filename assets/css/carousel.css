@@ -68,15 +68,43 @@ object-fit: cover;
     background-color: black;
 }
 
-/* .carousel-control-prev {
-    left: 63px;
+.carousel-control-prev {
+    left: -63px;
 }
 
 .carousel-control-next {
-    right: 63px;
+    right: -63px;
 }
 
 .carousel-control-next, .carousel-control-prev {
     width: 3%;
-} */
+}
+
+@media (max-width: 768px) {
+    .carouselFilmes {
+        flex-direction: column;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    #filmesMaisVistos #filmeInfo {
+        width: 100%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 12%;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+        top: 222px
+    }
+
+    .carousel-control-next{
+        right: 0;
+        top: 222px
+    }
+}
 

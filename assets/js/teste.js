@@ -77,11 +77,11 @@ const arrMovie = [
     {ptbr: 'slender man', ingles:'slender man'},
     {ptbr: 'Dragon Ball evolution', ingles:'DragonBall evolution'},
     {ptbr: 'Pink Flamingos', ingles:'Pink Flamingos'},
-    {ptbr: 'À Meia-Noite Levarei Sua Alma', ingles:'At midnight I will take your soul '},
+    {ptbr: 'À Meia-Noite Levarei Sua Alma', ingles:'At midnight I will take your soul'},
     {ptbr: 'Caderno da Morte', ingles:'death Note'},
     {ptbr: "Velocipastor", ingles: "Velocipastor"},
     {ptbr: "Os maus mortos ", ingles : "the evil dead"},
-    {ptbr: " ", ingles : ""},
+    {ptbr: "Rosquinha Assassina", ingles : "Attack of the Killer Donuts"},
     {ptbr: " ", ingles : ""},
 ]
 
