@@ -311,6 +311,7 @@ footer .btnCadastrar{
 
 footer .btnCadastrar:hover{
     background-color: var(--hoverGreen1);
+    text-decoration: none;
 }
 
 footer .formCadastrar {
