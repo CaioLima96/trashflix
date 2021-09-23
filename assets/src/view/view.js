@@ -1,4 +1,4 @@
-document.getElementById('pesqFilmes').addEventListener('change', (element) =>{
+document.getElementById('pesqFilmes').addEventListener('keyup', (element) =>{
     filmes(element.target.value)
     
 })
@@ -11,9 +11,9 @@ function filmes(inputText) {
         if(arrMovie[i].ptbr.toLowerCase().includes(inputText.toLowerCase()) || arrMovie[i].ingles.toLowerCase().includes(inputText.toLowerCase())) {
 
             let filmes = nossosFilmes(arrMovie[i].ingles)
-
+            let filmeCard = moldeCard(filmes)
             
-            document.getElementById('lista').innerHTML += moldeCard(filmes)
+            document.getElementById('lista').innerHTML = filmeCard
             // $("#lista").html(moldeCard(filmes.Poster))
             console.log(filmes)
         } 
