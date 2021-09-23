@@ -11,9 +11,16 @@ function filmes(inputText) {
         if(arrMovie[i].ptbr.toLowerCase().includes(inputText.toLowerCase()) || arrMovie[i].ingles.toLowerCase().includes(inputText.toLowerCase())) {
 
             let filmes = nossosFilmes(arrMovie[i].ingles)
+
+            // for(i =0; i < filmes.length; i++) {
+
+
+            // }
+
             let filmeCard = moldeCard(filmes)
             
-            document.getElementById('lista').innerHTML = filmeCard
+            $("#lista").html(filmeCard)
+            // document.getElementById('lista').innerHTML = filmeCard
             // $("#lista").html(moldeCard(filmes.Poster))
             console.log(filmes)
         } 
