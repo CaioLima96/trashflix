@@ -1,14 +1,20 @@
+#filmesMaisVistos {
+    padding: 60px 0;
+}
+
 #filmesMaisVistos > h2{
     text-align: center;
-    margin: 50px 0 0;
+    margin: 0;
     font-size: 3.125rem;
     padding: 0;
+    line-height: 0.8;
 }
 
 #carouselExampleControls{
     max-width: 1211px;
-    margin: 60px auto;
+    margin: 60px auto 0;
     width:90%;
+    overflow: hidden;
 }
 
 .carouselFilmes{

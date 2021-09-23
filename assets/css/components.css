@@ -34,8 +34,7 @@ body {
 */
 
 header {
-    background-color: rgba(0, 0, 0, 0.3);
-    /* background-image: linear-gradient(to top, rgb(0 0 0 / 0%), rgb(0 0 0 / 56%)); */
+    background-color: var(--bgDark1);
 }
 
 header nav {
@@ -94,3 +93,9 @@ header nav > a {
 /*
 ================= FOOTER =================
 */
+
+footer {
+    background-image: url(../img/bg/clipartBg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
