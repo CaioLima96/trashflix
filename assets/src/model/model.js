@@ -17,10 +17,11 @@ const arrMovie = [
     {ptbr: "Velocipastor", ingles: "Velocipastor"},
     {ptbr: "Os maus mortos ", ingles : "the evil dead"},
     {ptbr: "Rosquinha Assassina", ingles : "Attack of the Killer Donuts"},
+    {ptbr: "Re-Animator: A Hora dos Mortos-Vivos", ingles: "Re-Animator"}
 ]
 
 
 function moldeCard(objeto) {
-    return `<li data-title="${objeto.Title}" data-bs-toggle="modal" data-bs-target="#filmeModalHome"><img src="${objeto.Poster}"></li>`
+    return `<li class="filmeModal" data-title="${objeto.Title}" data-bs-toggle="modal" data-bs-target="#filmeModalHome"><img src="${objeto.Poster}"></li>`
 }
 

@@ -1,4 +1,4 @@
-document.getElementById('carouselExampleControls').addEventListener('click', (event) =>{
+document.addEventListener('click', (event) =>{
     //
         event.target.getAttribute('data-title')
     
