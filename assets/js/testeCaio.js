@@ -47,73 +47,74 @@ function validateEmail() {
 // })
 
 
+//verificar se é EVENT ou ELEMENT
 document.addEventListener('click', (event) =>{
 
-    let omdb2 = $.ajax({url: 'https://www.omdbapi.com/?t=Psycho&apikey=c377b618', async: false}).responseJSON
+    event.target.getAttribute('data-title')
+
+    let omdb2 = $.ajax({url: `https://www.omdbapi.com/?t=${event.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
     console.log(omdb2)
 
-   if(event.target.id=="testeModal") {
-    $(".modal-content").html(`
-        <div class="modal-header">
-
+    if(event.target.id=="testeModal") {
+        $(".modal-header").html(`
+    
             <div id="filmeTituloModal">
                 <p>${omdb2.Title}</p>
                 <p>${omdb2.Rated}</p>
             </div>
 
             <button type="button"  data-bs-dismiss="modal" aria-label="Close">X</button>
-
-        </div>
-
-        <div class="modal-body">
-
-            <div id="filmePosterModal">
-                <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+            
+        `);
+        $("#filmePosterModal").html(`
+        
+            <img src="${omdb2.Poster}" alt="${omdb2.Title} Poster">
+        
+        `);
+        $("#filmeNotaModal").html(`
+        
+            <div>
+                <p>IMDB</p>
+                <p>${omdb2.imdbRating ? omdb2.imdbRating : 'NULL'}</p>
             </div>
 
-            <div id="filmeInfoModal">
-
-                <div id="filmeNotaModal">
-
-                    <div>
-                        <p>IMDB</p>
-                        <p>${omdb2.imdbRating}</p>
-                    </div>
-
-                    <div>
-                        <p>${omdb2.Ratings[2].Source}</p>
-                        <p>${omdb2.Ratings[2].Value}</p>
-                    </div>
-
-                    <div>
-                        <p>${omdb2.Ratings[1].Source}</p>
-                        <p>${omdb2.Ratings[1].Value}</p>
-                    </div>
-
-                </div>
-
-                <div id="filmeSinopseModal">
-                    <p>${omdb2.Plot}</p>
-                </div>
-
-                <hr>
-
-                <div id="outrosFilmeModal">
-
-                    <p>Gênero: ${omdb2.Genre}</p>
-                    <p>Diretor: ${omdb2.Director}</p>
-                    <p>Roteirista: ${omdb2.Writer}</p>
-                    <p>Lançamento: ${omdb2.Released}</p>
-                    <p>Duração: ${omdb2.Runtime}</p>
-
-                </div>
-
+            <div>
+                <p>${omdb2.Ratings[2].Source ? omdb2.Ratings[2].Source : 'NULL'}</p>
+                <p>${omdb2.Ratings[2].Value ? omdb2.Ratings[2].Value : 'NULL'}</p>
             </div>
 
-        </div>
+            <div>
+                <p>${omdb2.Ratings[1].Source ? omdb2.Ratings[1].Source : 'NULL'}</p>
+                <p>${omdb2.Ratings[1].Value ? omdb2.Ratings[1].Value : 'NULL'}</p>
+            </div>
 
-    `);
-   }
+        `);
+        $("#filmeSinopseModal").html(`
+            <p>${omdb2.Plot}</p>
+        `);
+        $("#outrosFilmeModal").html(`
+            <p>Gênero: ${omdb2.Genre}</p>
+            <p>Diretor: ${omdb2.Director}</p>
+            <p>Roteirista: ${omdb2.Writer}</p>
+            <p>Lançamento: ${omdb2.Released}</p>
+            <p>Duração: ${omdb2.Runtime}</p>
+        `);
+        //$("#").html(``);
+    
+    } 
+
+    // try {
+    //    else {
+    //         throw new Error("ERRO: retorno da API inválido.")
+    //     }
+
+        
+    // } catch (error) {
+        
+    //     alert(error)
+    // }
+
+   
 })
 
 
