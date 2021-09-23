@@ -32,3 +32,25 @@ object-fit: cover;
     background-color: #41AF62;
 }
 
+h2{
+text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 62%;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+    border-radius: 0 0.313rem 0.313rem 0;
+    color: #41AF62;
+    border-radius: 20px;
+}
