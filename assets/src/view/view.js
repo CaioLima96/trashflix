@@ -1,4 +1,4 @@
-document.getElementById('pesqFilmes').addEventListener('keyup', (element) =>{
+document.getElementById('pesqFilmes').addEventListener('change', (element) =>{
     filmes(element.target.value)
     
 })
@@ -20,7 +20,7 @@ function filmes(inputText) {
             let filmeCard = moldeCard(filmes)
             
             $("#lista").html(filmeCard)
-            // document.getElementById('lista').innerHTML = filmeCard
+            // document.getElementById('lista').innerHTML += filmeCard
             // $("#lista").html(moldeCard(filmes.Poster))
             console.log(filmes)
         } 
