@@ -14,13 +14,16 @@
 ## ⚙️ Funcionalidades
 
 * O usuário realiza o cadastro no site, preenchendo os campos com as informações pessoais e com a imediata confirmação do pagamento, já terá acesso à todos os catálogos disponibilizados na plataforma, podendo:
+
   - [x] possuir até 4 usuários por conta; 👨‍👨‍👧‍👧
   - [x] abrir de forma simultânea em dispositivos móveis, desktop, notebook, tablets em até 4 telas; 📱
   - [x] realizar o pagamento de forma facilitada, através de cobrança recorrente no cartão de crédito, sem necessidade de comprometer seu limite; 💳
   - [x] cancelamento a qualquer momento, sem necessidade de fidelização, contato com central de atendimento ou qualquer outra dor de cabeça. 🥰
+  
 - Os usuários têm acesso à plataforma e aplicativo móvel, onde podem:
-  - [x] navegar pelos catálogos de filmes;
-  - [x] assisir de onde quiser, dá onde parou, sem propagandas ou interrupções indesejadas.
+
+  - [x] navegar pelos catálogos de filmes;🎬
+  - [x] assisir de onde quiser, de onde parou, sem propagandas ou interrupções indesejadas. 🕶 🍿
 
 
 ## 🎨 Layout
