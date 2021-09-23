@@ -14,7 +14,7 @@ const arrMovie = [
     {ptbr: 'Pink Flamingos', ingles:'Pink Flamingos'},
     {ptbr: 'À Meia-Noite Levarei Sua Alma', ingles:'At midnight I will take your soul '},
     {ptbr: 'Caderno da Morte', ingles:'death Note'},
-    {ptbr: "Velocipastor", ingles: "Velocipastor"},
+    {ptbr: "Velocipastor", ingles: "The Velocipastor"},
     {ptbr: "Os maus mortos ", ingles : "the evil dead"}
 ]
 

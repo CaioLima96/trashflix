@@ -1,6 +1,6 @@
 //verificar se é EVENT ou ELEMENT
 document.addEventListener('click', (event) =>{
-
+//.getElementById('carouselExampleControls')
     event.target.getAttribute('data-title')
 
     try {
@@ -13,7 +13,7 @@ document.addEventListener('click', (event) =>{
             
             throw new Error('Requisição com erro')
 
-        } else if(event.target.id=="testeModal") {
+        } else if(event.target.classList=="filmeModal") {
             $(".modal-header").html(`
 
                 <div id="filmeTituloModal">
@@ -195,12 +195,12 @@ document.addEventListener('click', (event) =>{
 //carousel
 
 
-function caousel() {
-    let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${element.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
-    console.log(omdb)
+// function caousel() {
+//     let omdb = $.ajax({url: `https://www.omdbapi.com/?t=${element.target.getAttribute('data-title')}&apikey=c377b618`, async: false}).responseJSON
+//     console.log(omdb)
 
-    //innerHTML += P OMDM.TITLE P <img data-poster="psycho">
-}
+//     //innerHTML += P OMDM.TITLE P <img data-poster="psycho">
+// }
 
 
 

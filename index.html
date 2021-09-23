@@ -4,12 +4,11 @@
 
 <head>
 
-
     <title>ResiliaFlix</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
+
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -17,7 +16,6 @@
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="./assets/css/components.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/carousel.css">
@@ -51,8 +49,7 @@
         <section id="intro">
 
             <div>
-                <h1 id="testeModal" data-title="Kondom des Grauens" data-bs-toggle="modal"
-                    data-bs-target="#filmeModalHome">Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
+                <h1>Filmes ruins para <br> pessoas com gosto duvidoso!</h1>
                 <p>Assista quando quiser e cancele a qualquer hora!</p>
 
                 <form id="formIntro">
@@ -74,158 +71,166 @@
 
             <!--Hyan-->
 
-            <H1>OS MAIS VISTOS </H1>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="border: 1px solid">
+            <h2>OS MAIS VISTOS</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-            </ol>  -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img src="./assets/img/bg/velocipastor.jpg" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2 class="filmeModal" data-title="The Velocipastor" data-bs-toggle="modal"
+                                    data-bs-target="#filmeModalHome">The velocipastor</h2>
+                                <h3>Sinopse</h3>
+                                <P> Após perder os pais, um padre viaja à China, onde herda uma habilidade misteriosa
+                                    que o permite transformar-se em um dinossauro.(...)</P>
 
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carouselFilmes">
-                <div class="foto"><img data-title="velocipastor" src="./assets/img/bg/velocipastor.jpg" alt="..."></div>
-                <div id="filmeInfo">
-                    <h2>The velocipastor</h2>
-                    <h3>Sinopse</h3>
-                    <P> Após perder os pais, um padre viaja à China, onde herda uma habilidade misteriosa que o permite transformar-se em um dinossauro.(...)</P>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
+                                <button>Veja mais >></button>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class="foto"> <img data-title="cinderela" src="./assets/img/bg/Cinderela-Baiana.jpg" alt="...">
-                </div>
-                <div id="filmeInfo">
-                    <h2> Cinderela Baiana </h2>
-                    <h3>Sinopse</h3>
-                    <p>Numa cidade da região metropolitana de Salvador, Bahia, vive uma família humilde. Em busca de melhores condições de vida, Raimundo se muda para a capital, pois arrumou um emprego perto do Pelourinho que pode ajudá-lo a cuidar melhor de sua esposa e filhos.(...)</p>
-                    <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-                </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"> <img data-title="cinderela" src="./assets/img/bg/Cinderela-Baiana.jpg"
+                                    alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2> Cinderela Baiana </h2>
+                                <h3>Sinopse</h3>
+                                <p>Numa cidade da região metropolitana de Salvador, Bahia, vive uma família humilde. Em
+                                    busca de melhores condições de vida, Raimundo se muda para a capital, pois arrumou
+                                    um emprego perto do Pelourinho que pode ajudá-lo a cuidar melhor de sua esposa e
+                                    filhos.(...)</p>
 
+                                <button type=submit>veja mais >></button>
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class='foto'> <img data-title="Death_Note" src="./assets/img/bg/death-note.jpg" alt="..."></div>
-                <div id="filmeInfo">
-                    <h2>Death Note</h2>
-                    <h3>Sinopse</h3>
-                    <p>Seattle, Estados Unidos. Light Turner  é um estudante brilhante que, um dia, encontra um caderno que repentinamente cai do céu.(...)</p>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class="foto"> <img data-title="pink_flamingos" src="./assets/img/bg/pink flamingos.jfif" alt="...">
-                </div>
-                <div id="filmeInfo">
-                    <h2>Pink flamingos</h2>
-                    <h3>Sinopse</h3>
-                    <p>Divine, seu louco filho hippie Crackers  e sua obesa mãe ostentam honrosa e orgulhosamente o título de "pessoas mais imundas do mundo".(...)</p>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
-                    </div>
-                </div>
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class="foto"><img data-title="slenderMan" src="./assets/img/bg/slender-m,an.png" alt="..."></div>
-                <div id="filmeInfo">
-                    <h2>Slender man </h2>
-                    <h3>Sinopse</h3>
-                    <p>As amigas Wren, Hallie, Chloe e Katie levam uma vida entediante no colégio. Quando ouvem falar num monstro chamado Slender Man.(...)</p>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
-                    </div>
-                </div>
-                </div>
-            </div>       
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class='foto'> <img src="./assets/img/bg/death-note.jpg" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Death Note</h2>
+                                <h3>Sinopse</h3>
+                                <p>Seattle, Estados Unidos. Light Turner é um estudante brilhante que, um dia, encontra
+                                    um caderno que repentinamente cai do céu.(...)</p>
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class="foto"><img data-title="centopeiaHumana" src="./assets/img/bg/centoeia humana.jpg" alt="...">
-                </div>
-                <div id="filmeInfo">
-                    <h2> human centipede</h2>
-                    <h3>Sinopse</h3>
-                    <p>Duas jovens americanas, que estão em viagem pela Europa, encontram-se com o carro quebrado à noite numa floresta deserta da Alemanha. Elas andam pelo local em busca de ajuda quando encontram uma cidadezinha isolada.(...)</p>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
+                                <button class="filmeModal" data-title="death Note" data-bs-toggle="modal"
+                                    data-bs-target="#filmeModalHome">veja mais >></button>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"> <img data-title="pink_flamingos"
+                                    src="./assets/img/bg/pink flamingos.jfif" alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2>Pink flamingos</h2>
+                                <h3>Sinopse</h3>
+                                <p>Divine, seu louco filho hippie Crackers e sua obesa mãe ostentam honrosa e
+                                    orgulhosamente o título de "pessoas mais imundas do mundo".(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="slenderMan" src="./assets/img/bg/slender-m,an.png"
+                                    alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Slender man </h2>
+                                <h3>Sinopse</h3>
+                                <p>As amigas Wren, Hallie, Chloe e Katie levam uma vida entediante no colégio. Quando
+                                    ouvem falar num monstro chamado Slender Man.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="centopeiaHumana"
+                                    src="./assets/img/bg/centoeia humana.jpg" alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2> human centipede</h2>
+                                <h3>Sinopse</h3>
+                                <p>Duas jovens americanas, que estão em viagem pela Europa, encontram-se com o carro
+                                    quebrado à noite numa floresta deserta da Alemanha. Elas andam pelo local em busca
+                                    de ajuda quando encontram uma cidadezinha isolada.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
 
 
                         </div>
                     </div>
 
 
-            <div class="carousel-item">
-                <div class="carouselFilmes">
-                <div class="foto"><img data-title="rubber" src="./assets/img/bg/pneu assassino.jfif" alt="..."></div>
-                <div id="filmeInfo">
-                    <h2>Pneu assassino</h2>
-                    <h3>Sinopse</h3>
-                    <p>Em pleno deserto californiano, um pneu com poderes telepáticos acorda subitamente e começa a assassinar todos os seres vivos que encontra pela frente.(...)</p>
-                    <div class ="botao">
-                        <button type=submit>veja mais >></button>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="rubber" src="./assets/img/bg/pneu assassino.jfif"
+                                    alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Pneu assassino</h2>
+                                <h3>Sinopse</h3>
+                                <p>Em pleno deserto californiano, um pneu com poderes telepáticos acorda subitamente e
+                                    começa a assassinar todos os seres vivos que encontra pela frente.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-            </div>
-            
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img data-title="malditasAranha" src="./assets/img/bg/Malditas-Aranhas.jpg" alt="...">
-                </div>
-                <div id="filmeInfo">
-                <h2>damn spiders</h2>
-                <h3>Sinopse</h3>
-                <p>Após um acidente tóxico ter ocorrido próximo de uma pequena cidade do interior dos Estados Unidos, várias aranhas venenosas são expostas à radiação e crescem em proporções monstruosas, ameaçando toda a população local.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img data-title="theEvil" src="./assets/img/bg/evil-dead.jpg" alt="..."></div>
-                <div id="filmeInfo">
-                <h2>The evil dead</h2>
-                <h3>Sinopse</h3>
-                <p>Cinco estudantes da Universidade de Michigan decidem passar um final de semana em uma casa isolada. Lá eles encontram o livro dos mortos, um documento que data da época da Babilônia e que está relacionado ao livro dos mortos egípcio.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="malditasAranha"
+                                    src="./assets/img/bg/Malditas-Aranhas.jpg" alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2>damn spiders</h2>
+                                <h3>Sinopse</h3>
+                                <p>Após um acidente tóxico ter ocorrido próximo de uma pequena cidade do interior dos
+                                    Estados Unidos, várias aranhas venenosas são expostas à radiação e crescem em
+                                    proporções monstruosas, ameaçando toda a população local.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="theEvil" src="./assets/img/bg/evil-dead.jpg" alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2>The evil dead</h2>
+                                <h3>Sinopse</h3>
+                                <p>Cinco estudantes da Universidade de Michigan decidem passar um final de semana em uma
+                                    casa isolada. Lá eles encontram o livro dos mortos, um documento que data da época
+                                    da Babilônia e que está relacionado ao livro dos mortos egípcio.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="carousel-item">
                         <div class="carouselFilmes">
@@ -238,123 +243,135 @@
                             </div>
                         </div>
                     </div>
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img data-title="teeth" src="./assets/img/bg/teethh.jpg" alt="..."></div>
-                <div id="filmeInfo">
-                <h2>Teeth</h2>
-                <h3>Sinopse</h3>
-                <p>Dawn é uma aluna do colegial, que mora perto de uma usina nuclear. Ela está apaixonada por Tobey, um colega da escola, e tem uma grande atração física por ele, mas tem a intenção de permanecer virgem até o casamento.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="teeth" src="./assets/img/bg/teethh.jpg" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Teeth</h2>
+                                <h3>Sinopse</h3>
+                                <p>Dawn é uma aluna do colegial, que mora perto de uma usina nuclear. Ela está
+                                    apaixonada por Tobey, um colega da escola, e tem uma grande atração física por ele,
+                                    mas tem a intenção de permanecer virgem até o casamento.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img data-title="rosquinha" src="./assets/img/bg/rosquina assassina.jfif" alt="..."></div>
-                <div id="filmeInfo">
-                <h2>killer donut</h2>
-                <h3>Sinopse</h3>
-                <p>Luther é um esquisito cientista que quer entrar para a história, mas um acidente químico em seu laboratório transforma donuts comuns em assassinos sedentos por sangue.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img data-title="rosquinha" src="./assets/img/bg/rosquina assassina.jfif"
+                                    alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>killer donut</h2>
+                                <h3>Sinopse</h3>
+                                <p>Luther é um esquisito cientista que quer entrar para a história, mas um acidente
+                                    químico em seu laboratório transforma donuts comuns em assassinos sedentos por
+                                    sangue.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"> <img class="foto" data-title="sharnado" src="./assets/img/bg/sharknado.jpg"
-                    class="d-block w-100" alt="..."></div>
-                <div id="filmeInfo">
-                <h2>Sharknado</h2>
-                <h3>Sinopse</h3>
-                <p>Uma grande tornado surge no litoral da Califórnia... O fenômeno natural começa no mar e interfere na vida de milhares de tubarões, que são sugados do oceano e arremessados por toda Los Angeles.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"> <img class="foto" data-title="sharnado"
+                                    src="./assets/img/bg/sharknado.jpg" class="d-block w-100" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Sharknado</h2>
+                                <h3>Sinopse</h3>
+                                <p>Uma grande tornado surge no litoral da Califórnia... O fenômeno natural começa no mar
+                                    e interfere na vida de milhares de tubarões, que são sugados do oceano e
+                                    arremessados por toda Los Angeles.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img class="foto" data-title="estaNoite"
-                    src="./assets/img/bg/Esta noite encarnerei no teu cadaver.jpg" alt="...">
-                </div>
-                <div id="filmeInfo">
-                <h2>Tonight I will incarnate in your corpse</h2>
-                <h3>Sinopse</h3>
-                <p>as maldades de Zé do Caixão se tornam cada vez mais sádicas.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img class="foto" data-title="estaNoite"
+                                    src="./assets/img/bg/Esta noite encarnerei no teu cadaver.jpg" alt="...">
+                            </div>
+                            <div id="filmeInfo">
+                                <h2>Tonight I will incarnate in your corpse</h2>
+                                <h3>Sinopse</h3>
+                                <p>as maldades de Zé do Caixão se tornam cada vez mais sádicas.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img class="foto" data-title="tremors" src="./assets/img/bg/Tremors.jpeg" alt="..."></div>
-                <div id="filmeInfo">
-                <h2>Tremors</h2>
-                <h3>Sinopse</h3>
-                <p>Perfection é uma pequena vila isolada no meio do estado de Nevada onde, indo de encontro à calmaria costumeira, passa a sofrer uma série de abalos sísmicos estranhos.</p>
-                <div class ="botao">
-                    <button type=submit>Veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img class="foto" data-title="tremors" src="./assets/img/bg/Tremors.jpeg"
+                                    alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>Tremors</h2>
+                                <h3>Sinopse</h3>
+                                <p>Perfection é uma pequena vila isolada no meio do estado de Nevada onde, indo de
+                                    encontro à calmaria costumeira, passa a sofrer uma série de abalos sísmicos
+                                    estranhos.</p>
+                                <div class="botao">
+                                    <button type=submit>Veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img class="foto" data-title="tomate" src="./assets/img/bg/tomate assassino.jfif"
-                    alt="..."></div>
-                <div id="filmeInfo">
-                <h2>killer tomatoes</h2>
-                <h3>Sinopse</h3>
-                <p>A situação está saindo do controle em uma área experimental do departamento de agricultura, e tomates estão atacando as pessoas.</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img class="foto" data-title="tomate"
+                                    src="./assets/img/bg/tomate assassino.jfif" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>killer tomatoes</h2>
+                                <h3>Sinopse</h3>
+                                <p>A situação está saindo do controle em uma área experimental do departamento de
+                                    agricultura, e tomates estão atacando as pessoas.</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img class="foto" data-title="condom" src="./assets/img/bg/A-Camisinha-Assassina-1996-5.jpg"
-                    alt="..."></div>
-                <div id="filmeInfo">
-                <h2>killeres condoms</h2>
-                <h3>Sinopse</h3>
-                <p></p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img class="foto" data-title="condom"
+                                    src="./assets/img/bg/A-Camisinha-Assassina-1996-5.jpg" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2>killeres condoms</h2>
+                                <h3>Sinopse</h3>
+                                <p></p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="carousel-item">
-            <div class="carouselFilmes">
-                <div class="foto"><img class="foto" data-title="Dragonball" src="./assets/img/bg/Dragon-Ball-Evolution-Piccolo-Goku.jpg"
-                    alt="..."></div>
-                <div id="filmeInfo">
-                <h2> Dragon Ball Evolution</h2>
-                <h3>Sinopse</h3>
-                <p>O jovem guerreiro Son Goku parte em uma missão, correndo contra o tempo e o vingativo Rei Piccolo.(...)</p>
-                <div class ="botao">
-                    <button type=submit>veja mais >></button>
-                </div>
-                </div>
-            </div>
-            </div>
+                    <div class="carousel-item">
+                        <div class="carouselFilmes">
+                            <div class="foto"><img class="foto" data-title="Dragonball"
+                                    src="./assets/img/bg/Dragon-Ball-Evolution-Piccolo-Goku.jpg" alt="..."></div>
+                            <div id="filmeInfo">
+                                <h2> Dragon Ball Evolution</h2>
+                                <h3>Sinopse</h3>
+                                <p>O jovem guerreiro Son Goku parte em uma missão, correndo contra o tempo e o vingativo
+                                    Rei Piccolo.(...)</p>
+                                <div class="botao">
+                                    <button type=submit>veja mais >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="carousel-item">
                         <div class="carouselFilmes">
                             <div class="foto"><img class="foto" data-title="tomate"
@@ -378,6 +395,8 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+            </div>
+
         </section>
 
         <!-- FAQ -->
@@ -473,9 +492,11 @@
                     </div>
                 </div>
             </div>
+
+        </section>
     </div>
-    </section>
-    </div>
+
+
 
     <footer class="py-4 footer">
         <div class="container">
@@ -501,7 +522,6 @@
                         <li class="nav-item mb-2"><a href="./assets/pages/equipe.html" class="nav-link p-0">Equipe</a>
                         </li>
                         <li class="nav-item mb-2"><a
-
                                 href="http://comercial.recordtv.com.br/programacao-nacional/fala-que-eu-te-escuto/"
                                 target="_blank" class="nav-link p-0">Fale Conosco</a></li>
                         <li class="nav-item mb-2"><a href="https://help.netflix.com/pt/legal/termsofuse/"
@@ -509,10 +529,10 @@
 
                     </ul>
                 </div>
-          </div>
+            </div>
         </div>
 
-       
+
     </footer>
 
 
@@ -547,12 +567,13 @@
 
     </div>
 
-  <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/modal.js"></script>
-  <script src="./assets/js/teste.js"></script>
-  <script src="./assets/js/testeCaio.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
+
+    <script src="./assets/js/testeCaio.js"></script>
 
 
     <!-- Bootstrap Bundle with Popper -->
